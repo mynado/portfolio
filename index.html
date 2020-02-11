@@ -16,6 +16,7 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet"> 
+
 </head>
 <body>
     <header>
@@ -28,26 +29,26 @@
     </header>
     <!-- <div class="container"> -->
        
+        
         <div class="intro container">
             <h1>MyNa Do. <br>Front-end developer and <em>artist*</em>.</h1>
         </div>
-        
         <div class="projects-wrapper">
             <div class="projects container" id="projects">
-                <h1>Projects</h1>
-                <div class="project" id="project1">
+                <h1 class="animation hidden">Projects</h1>
+                <div class="project animation hidden" id="project1">
                     <a href="http://nameday.meina.se/" target="_blank"><img src="assets/images/nameday.png" alt=""></a>
                     <h2>Name Day App</h2>
                     <p>JavaScript</p>
                 </div>
 
-                <div class="project" id="project2">
+                <div class="project animation hidden" id="project2">
                     <a href="http://nameday.meina.se/" target="_blank"><img src="assets/images/number.png" alt=""></a>
                     <h2>Number Guessing Game</h2>
                     <p>JavaScript</p>
                 </div>
 
-                <div class="project" id="project3">
+                <div class="project animation hidden" id="project3">
                     <img src="https://picsum.photos/600" alt="">
                     <h2>First School Project</h2>
                     <p>HTML, CSS</p>
@@ -56,35 +57,42 @@
             </div> <!-- / .projects -->
         </div> <!-- / .projects-wrapper -->
 
-        <div class="about-wrapper">
-            <div class="about container" id="about">
-                <div class="info-wrapper">
-                   
-                    <h1>About</h1>
-                 
-
-                    <div class="info">I am a <strong>front  end developer</strong> and <em>artist*</em> based in Malmö, Sweden. Currently studying at Medieinstitutet and working in film.</div>
-                </div>
+        <div class="about-wrapper animation hidden">
+            <div class="about container animation hidden" id="about">
+                <h1 class="animation hidden">About</h1>
+                <p>I am a <strong>front end developer</strong> and <em>artist*</em> based in Malmö, Sweden. Currently studying at Medieinstitutet and working in film.</p>
                 
                 <div class="skills">
                     <h2>Skills</h2>
-                    <h3>Code</h3>
-                    <p>JavaScript &bull; HTML5 &bull; CSS3 &bull; Bootstrap &bull; Vue.js</p>
-                    <!-- <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Javascript</li>
-                        <li>Bootstrap</li>
-                        <li>Vue.js</li>
-                    </ul> -->
-                    <h3>Design</h3>
-                    <p>Photoshop &bull; Illustrator &bull; InDesign &bull; Premiere Pro &bull; XD</p>
-                    <!-- <ul>
-                        <li>Photoshop</li>
-                        <li>Illustrator</li>
-                        <li>InDesign</li>
-                        <li>Premiere Pro</li>
-                    </ul> -->
+                    <div class="flex-wrapper">
+                        <div class="code">
+                            <h3>Code</h3>
+                            <!-- <p>JavaScript &bull; HTML5 &bull; CSS3 &bull; Bootstrap &bull; Vue.js</p> -->
+                            <ul>
+                                <li>HTML & CSS</li>
+                                <li>Javascript</li>
+                                <li>Bootstrap</li>
+                                <li>Vue.js</li>
+                                <li>React</li>
+                                <li>Wordpress + CMS</li>
+                            </ul>
+                        </div>
+                        <div class="design">
+                            <h3>Design</h3>
+                            <!-- <p>Photoshop &bull; Illustrator &bull; InDesign &bull; Premiere Pro &bull; XD</p> -->
+                            <ul>
+                                <li>Photoshop</li>
+                                <li>Illustrator</li>
+                                <li>InDesign</li>
+                                <li>Premiere Pro</li>
+                                <li>XD</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="other">
+                        <h3>Other skills</h3>
+                        <p>Film Director &bull; Film Producer &bull; Photographer &bull; Graphic Designer &bull; DJ &bull; Event Producer &bull; Costume Designer</p>
+                    </div>
                     
                 </div>
                 <div class="education">
@@ -92,22 +100,25 @@
                     <ul>
                         <li>
                             <strong>Front End Developer</strong><br>
-                            <em>Medieinstitutet, Malmö</em>
+                            <em>Medieinstitutet, Malmö (2019 - 2021)</em>
                         </li>
                         <li>
                             <strong>Computer Engineering</strong><br>
-                            <em>Jönköping University</em>
+                            <em>Jönköping University (2005-2009)</em>
                         </li>
                     </ul>
                 </div>
 
                 <div class="experience">
                     <h2>Experience</h2>
-                    <p>Selected work experience</p>
                     <ul>
                         <li>
                             <strong>Co-Founder & Creative Producer</strong><br> <em>Mahoyo (2008 - now)</em>
                         </li>
+                        <li>
+                            <strong>Film Director</strong><br>
+                            <em>reflexion (2016 - now)</em>
+                         </li>
                         <li>
                             <strong>Webeditor</strong><br>
                             <em>Natur & Kultur (2018-2019)</em>
@@ -120,6 +131,10 @@
                             <strong>Event Producer Bråvalla Festival 2019</strong><br>
                             <em>Carlserg The Green Door Project (2016)</em>
                          </li>
+                         <li>
+                            <strong>Film Director & Producer</strong><br>
+                            <em>The Mahoyo Project: South Africa (2015)</em>
+                         </li>
                     </ul>
                 </div> <!-- / .experience -->
 
@@ -128,9 +143,7 @@
                 </div> <!-- / .artist -->
             </div> <!-- / .about -->
         </div> <!-- / .about-wrapper -->
-        
-    <!-- </div> -->
-     <!-- / .container -->
+    
 
     <footer>
         <div class="container">
@@ -152,5 +165,6 @@
 
     </footer>
     
+    <script src="assets/scripts/app.js"></script>
 </body>
 </html>
