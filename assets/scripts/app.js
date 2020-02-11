@@ -1,7 +1,14 @@
-const isInViewport = (e) => {
-    const projectEl = document.querySelectorAll('.animation');
+const getRandomPosition = () => {
+    const random = Math.floor(Math.random()*100);
+    console.log(random);
+};
 
-    projectEl.forEach(project => {
+getRandomPosition();
+
+const isInViewport = (e) => {
+    const animatedEl = document.querySelectorAll('.animation');
+
+    animatedEl.forEach(project => {
         pos = project.getBoundingClientRect(),
         offset = 10;
         // hardcoded an offset here
@@ -9,9 +16,11 @@ const isInViewport = (e) => {
         project.style.display = "block";
         project.classList.add("popin");
         project.classList.remove("hidden");
+        project.classList.add('random-position');
     }
 });
 }
 
 window.addEventListener('scroll',isInViewport);
   
+

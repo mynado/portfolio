@@ -47,7 +47,8 @@ a:visited {
 }
 
 a:hover {
-    color: #ccc;
+    color: #777;
+    text-decoration: none;
 }
 
 .container {
@@ -66,24 +67,56 @@ a:hover {
     bottom: 1rem;
 }
 
-.title-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+/* 
+    Projects
+*/
+.project {
+    margin-bottom: 3rem;
+    position: relative;
 }
-  
-  .rotate-left {
-      transform: translateX(-50%) translateY(-50%) rotate(-90deg);
-      margin-top: -7rem;
-      margin-left: 1rem;
-      color: #777;
-  }
 
-/* .rotate {
-    transform: rotate(-90deg);
+.project-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+
+}
+
+.projects h1 {
+    color: red;
+    margin-bottom: 1rem;
+}
+
+/* .project h2 {
+    font-size: 1.2rem;
 } */
 
+.project p {
+    font-size: 1rem;
+}
 
+.project img {
+    /* margin: 0 auto;
+    margin-bottom: 1rem; */
+    width: 100%;
+}
+
+/* Animation */
+@keyframes pop-in {
+    0% { opacity: 0;transform: scale(0.5); }
+    100% { opacity: 1;transform: scale(1); }
+}
+
+.popin {
+    animation: pop-in 1s ease;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+/* About */
 
 .about-wrapper {
     background-color: peachpuff;
@@ -124,72 +157,15 @@ a:hover {
     margin-left: 1rem;
 }
 
-/* 
-    Projects
-*/
-
-.projects-wrapper {
-    
-  
-}
-
-.project {
-    margin-bottom: 3rem;
-   
-}
-
-.project.change {
-    opacity: 1;
-    transition: all 1s;
-  }
-
-.projects h1 {
-    color: red;
-    margin-bottom: 1rem;
-}
-
-.project h2 {
-    font-size: 1.2rem;
-}
-
-.project p {
-    font-size: 1rem;
-}
-
-.project img {
-    margin: 0 auto;
-    margin-bottom: 1rem;
-    width: 100%;
-}
-
-@keyframes pop-in {
-    0% { opacity: 0;transform: scale(0.5); }
-    100% { opacity: 1;transform: scale(1); }
-}
-
-.popin {
-    animation: pop-in 1s ease;
-}
-
-.hidden {
-    opacity: 0;
-}
-
 .artist p {
     font-size: 1rem;
 }
 
-.box {
-    transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
-  }
-
-
-
+/* Footer */
 
 footer .container {
     font-size: 1.3rem;
     text-align: center;
-
 }
 
 footer li {
@@ -197,6 +173,34 @@ footer li {
     list-style-type: none;
 }
 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* .projects-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    } */
 
-  
-  
+    .project {
+        width: 60%;
+    }
+
+    #project2 {
+        margin-left: auto; 
+    }
+
+    #project3 {
+        margin: 0 auto;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

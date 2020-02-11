@@ -27,47 +27,58 @@
             </ul>
         </nav>
     </header>
-    <!-- <div class="container"> -->
-       
-        
         <div class="intro container">
             <h1>MyNa Do. <br>Front-end developer and <em>artist*</em>.</h1>
         </div>
         <div class="projects-wrapper">
             <div class="projects container" id="projects">
                 <h1 class="animation hidden">Projects</h1>
+                <div class="projects-wrapper">
                 <div class="project animation hidden" id="project1">
                     <a href="http://nameday.meina.se/" target="_blank"><img src="assets/images/nameday.png" alt=""></a>
-                    <h2>Name Day App</h2>
-                    <p>JavaScript</p>
+                    <div class="project-title">
+                        <h2>Name Day App</h2>
+                        <p>JavaScript</p>
+                    </div>
                 </div>
 
                 <div class="project animation hidden" id="project2">
                     <a href="http://nameday.meina.se/" target="_blank"><img src="assets/images/number.png" alt=""></a>
-                    <h2>Number Guessing Game</h2>
-                    <p>JavaScript</p>
+                    <div class="project-title">
+                        <h2>Number Guessing Game</h2>
+                        <p>JavaScript</p>
+                    </div>
                 </div>
 
                 <div class="project animation hidden" id="project3">
                     <img src="https://picsum.photos/600" alt="">
-                    <h2>First School Project</h2>
-                    <p>HTML, CSS</p>
+                    <div class="project-title">
+                        <h2>First School Project</h2>
+                        <p>HTML, CSS</p>
+                    </div>
                 </div>
-                
+
+                <div class="project animation hidden" id="project4">
+                    <img src="https://picsum.photos/600" alt="">
+                    <div class="project-title">
+                        <h2>First School Project</h2>
+                        <p>HTML, CSS</p>
+                    </div>
+                </div>
+            </div>
             </div> <!-- / .projects -->
         </div> <!-- / .projects-wrapper -->
 
-        <div class="about-wrapper animation hidden">
-            <div class="about container animation hidden" id="about">
-                <h1 class="animation hidden">About</h1>
-                <p>I am a <strong>front end developer</strong> and <em>artist*</em> based in Malmö, Sweden. Currently studying at Medieinstitutet and working in film.</p>
+        <div class="about-wrapper">
+            <div class="about container" id="about">
+                <h1>About</h1>
+                <p>I am a soon-to-be <strong>front end developer</strong> and <em>artist*</em> based in Malmö, Sweden. Currently studying at Medieinstitutet and working in film.</p>
                 
                 <div class="skills">
                     <h2>Skills</h2>
                     <div class="flex-wrapper">
                         <div class="code">
                             <h3>Code</h3>
-                            <!-- <p>JavaScript &bull; HTML5 &bull; CSS3 &bull; Bootstrap &bull; Vue.js</p> -->
                             <ul>
                                 <li>HTML & CSS</li>
                                 <li>Javascript</li>
@@ -79,7 +90,6 @@
                         </div>
                         <div class="design">
                             <h3>Design</h3>
-                            <!-- <p>Photoshop &bull; Illustrator &bull; InDesign &bull; Premiere Pro &bull; XD</p> -->
                             <ul>
                                 <li>Photoshop</li>
                                 <li>Illustrator</li>
@@ -88,13 +98,13 @@
                                 <li>XD</li>
                             </ul>
                         </div>
-                    </div>
+                    </div><!-- / .flex-wrapper -->
                     <div class="other">
                         <h3>Other skills</h3>
                         <p>Film Director &bull; Film Producer &bull; Photographer &bull; Graphic Designer &bull; DJ &bull; Event Producer &bull; Costume Designer</p>
                     </div>
-                    
-                </div>
+                </div> <!-- / .skills -->
+
                 <div class="education">
                     <h2>Education</h2>
                     <ul>
@@ -107,7 +117,7 @@
                             <em>Jönköping University (2005-2009)</em>
                         </li>
                     </ul>
-                </div>
+                </div> <!-- / .education -->
 
                 <div class="experience">
                     <h2>Experience</h2>
@@ -159,11 +169,8 @@
             <div class="copyrigt">
                 <p>&copy; mynado.se</p>
             </div>
-
-           
         </div>
-
-    </footer>
+    </footer> <!-- / footer -->
     
     <script src="assets/scripts/app.js"></script>
 </body>
