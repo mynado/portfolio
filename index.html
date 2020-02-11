@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyNa Do</title>
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/styles/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous"/>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet"> 
@@ -15,55 +21,136 @@
     <header>
         <nav>
             <ul>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
             </ul>
         </nav>
     </header>
-    <div class="container">
+    <!-- <div class="container"> -->
        
-        <div class="intro">
-            <h1>MyNa Do. <br>Front-end developer and <em>artist</em>.</h1>
-        </div>
-        <div class="about" id="about">
-            <div class="outer-left">
-                <h1 class="inner-left rotate-left">About</h1>
-            </div>
-            
-            <div class="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Javascript</li>
-                    <li>Bootstrap</li>
-                    <li>Vue.js</li>
-                    <li>Photoshop</li>
-                    <li>Illustrator</li>
-                    <li>InDesign</li>
-                    <li>Premiere Pro</li>
-
-                </ul>
-            </div>
-            <div class="education">
-                <h2>Education</h2>
-                <ul>
-                    <li><strong>Front End Developer</strong> - Medieinstitutet, Malmö</li>
-                    <li><strong>Computer Engineering</strong> - Jönköping University</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="work" id="work">
-            <div class="heading-wrapper">
-                <div class="outer-right">
-                    <h1 class="inner-right rotate-right">Work</h1>
-                </div>
-            </div>
-            
+        <div class="intro container">
+            <h1>MyNa Do. <br>Front-end developer and <em>artist*</em>.</h1>
         </div>
         
-    </div>
+        <div class="projects-wrapper">
+            <div class="projects container" id="projects">
+                <h1>Projects</h1>
+                <div class="project" id="project1">
+                    <a href="http://nameday.meina.se/" target="_blank"><img src="assets/images/nameday.png" alt=""></a>
+                    <h2>Name Day App</h2>
+                    <p>JavaScript</p>
+                </div>
+
+                <div class="project" id="project2">
+                    <a href="http://nameday.meina.se/" target="_blank"><img src="assets/images/number.png" alt=""></a>
+                    <h2>Number Guessing Game</h2>
+                    <p>JavaScript</p>
+                </div>
+
+                <div class="project" id="project3">
+                    <img src="https://picsum.photos/600" alt="">
+                    <h2>First School Project</h2>
+                    <p>HTML, CSS</p>
+                </div>
+                
+            </div> <!-- / .projects -->
+        </div> <!-- / .projects-wrapper -->
+
+        <div class="about-wrapper">
+            <div class="about container" id="about">
+                <div class="info-wrapper">
+                   
+                    <h1>About</h1>
+                 
+
+                    <div class="info">I am a <strong>front  end developer</strong> and <em>artist*</em> based in Malmö, Sweden. Currently studying at Medieinstitutet and working in film.</div>
+                </div>
+                
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <h3>Code</h3>
+                    <p>JavaScript &bull; HTML5 &bull; CSS3 &bull; Bootstrap &bull; Vue.js</p>
+                    <!-- <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Javascript</li>
+                        <li>Bootstrap</li>
+                        <li>Vue.js</li>
+                    </ul> -->
+                    <h3>Design</h3>
+                    <p>Photoshop &bull; Illustrator &bull; InDesign &bull; Premiere Pro &bull; XD</p>
+                    <!-- <ul>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>InDesign</li>
+                        <li>Premiere Pro</li>
+                    </ul> -->
+                    
+                </div>
+                <div class="education">
+                    <h2>Education</h2>
+                    <ul>
+                        <li>
+                            <strong>Front End Developer</strong><br>
+                            <em>Medieinstitutet, Malmö</em>
+                        </li>
+                        <li>
+                            <strong>Computer Engineering</strong><br>
+                            <em>Jönköping University</em>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="experience">
+                    <h2>Experience</h2>
+                    <p>Selected work experience</p>
+                    <ul>
+                        <li>
+                            <strong>Co-Founder & Creative Producer</strong><br> <em>Mahoyo (2008 - now)</em>
+                        </li>
+                        <li>
+                            <strong>Webeditor</strong><br>
+                            <em>Natur & Kultur (2018-2019)</em>
+                        </li>
+                        <li>
+                            <strong>Digital Producer</strong><br>
+                            <em>Natur & Kultur (2018-2019)</em>
+                        </li>
+                        <li>
+                            <strong>Event Producer Bråvalla Festival 2019</strong><br>
+                            <em>Carlserg The Green Door Project (2016)</em>
+                         </li>
+                    </ul>
+                </div> <!-- / .experience -->
+
+                <div class="artist">
+                    <p>* For more info about my artistry check out my work at <a href="http://mahoyo.com" target="_blank">mahoyo.com</a>. </p>
+                </div> <!-- / .artist -->
+            </div> <!-- / .about -->
+        </div> <!-- / .about-wrapper -->
+        
+    <!-- </div> -->
+     <!-- / .container -->
+
+    <footer>
+        <div class="container">
+            <div class="social-media">
+                <ul>
+                    <li><a href="" target="_blank"><span class="fab fa-linkedin-in"></span></a></li>
+                    <li><a href="" target="_blank"><span class="fab fa-github"></span></a></li>
+                    <li><a href="" target="_blank"><span class="fab fa-instagram"></span></a></li>
+                </ul>
+                <p>myna@mynado.se</p>
+            </div>
+
+            <div class="copyrigt">
+                <p>&copy; mynado.se</p>
+            </div>
+
+           
+        </div>
+
+    </footer>
     
 </body>
 </html>

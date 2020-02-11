@@ -4,17 +4,22 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    color: #333;
     font-family: 'Lora', serif;
     font-size: 1.5rem;
     line-height: 1.2;
-    scroll-behavior: smooth;
 }
 
 header {
     padding: 1rem;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 nav ul {
@@ -27,6 +32,24 @@ nav li {
     margin-left: 1rem;
 }
 
+p {
+    margin-bottom: 1rem;
+}
+
+nav a {
+    background-color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    padding: 0.2rem;
+}
+
+a:visited {
+    color: #333;
+}
+
+a:hover {
+    color: #ccc;
+}
+
 .container {
     max-width: 920px;
     margin: 0 auto;
@@ -34,60 +57,111 @@ nav li {
 
 }
 
-.outer-left {
-    background-color: pink;
-    width: 40px;
-      position: relative;
-      display: inline-block;
-      margin: -5.5rem 1rem;
-  }
-  
-  .inner-left {
-    color: #878787;
+.intro {
+    height: 100vh;
+}
+
+.intro h1 {
     position: absolute;
-    top: 50%;
-    
-  }
+    bottom: 1rem;
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
   
   .rotate-left {
       transform: translateX(-50%) translateY(-50%) rotate(-90deg);
-  }
-
-  .outer-right {
-    width: 1.5rem;
-    position: relative;
-    float: right;
-    top: 8rem;
-  }
-  
-  .inner-right {
-    color: #878787;
-    position: absolute;
-    top: 50%;
-  }
-  
-  .rotate-right {
-      transform: translateX(-50%) translateY(-50%) rotate(90deg);
+      margin-top: -7rem;
+      margin-left: 1rem;
+      color: #777;
   }
 
 /* .rotate {
     transform: rotate(-90deg);
 } */
 
-.intro {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+
+
+.about-wrapper {
+    background-color: peachpuff;
 }
 
-.about {
-    
+.about-wrapper p {
+    font-size: 1.2rem;
 }
 
 .about li {
+    font-size: 1.2rem;
     list-style-type: none;
+}
+
+.info-wrapper {
+    margin-bottom: 1rem;
 }
 
 .skills {
     margin-bottom: 1rem;
-    text-align: right;
+}
+
+.education {
+    margin-bottom: 1rem;
+}
+
+.education li,
+.experience li {
+    list-style-type: circle;
+    margin-left: 1rem;
+}
+
+/* 
+    Projects
+*/
+
+.projects-wrapper {
+    background-color: #e3b9b9;
+  
+}
+
+.project {
+    margin-bottom: 3rem;
+}
+
+.projects h1 {
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.project h2 {
+    font-size: 1.2rem;
+}
+
+.project p {
+    font-size: 1rem;
+}
+
+.project img {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.artist p {
+    font-size: 1rem;
+}
+
+
+
+
+footer .container {
+    font-size: 1.3rem;
+    text-align: center;
+
+}
+
+footer li {
+    display: inline-block;
+    list-style-type: none;
 }
