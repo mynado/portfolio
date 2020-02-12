@@ -37,3 +37,8 @@ document.querySelector('#close-menu').addEventListener('click', e => {
 	console.log('click');
 	closeNav();
 });
+
+document.querySelectorAll('#navLinks li').forEach(link => link.addEventListener('click', e => {
+	console.log('click');
+	closeNav();
+}));

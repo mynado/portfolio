@@ -52,7 +52,7 @@ a:hover {
 	right: 0;
 	top: 0;
 	background-color: rgb(255, 255, 255);
-	background-color: rgba(255,255,255, 0.9); 
+	background-color: rgba(255,255,255, 0.93); 
 	overflow-x: hidden; 
 	transition: 0.5s; 
   }
@@ -80,7 +80,6 @@ a:hover {
 	color: #f1f1f1;
   }
   
-
   .overlay .closebtn {
 	position: absolute;
 	top: 0;
@@ -89,7 +88,6 @@ a:hover {
 	padding-top: 0;
 	padding-right: 1.2rem;
 	cursor: pointer;
-	/* transform: translateX(-50%); */
   }
 
   /* Hamburger menu */
@@ -103,17 +101,6 @@ a:hover {
 	  cursor: pointer;
   }
 
-  /*
-  @media screen and (max-height: 450px) {
-	.overlay a {font-size: 20px}
-	.overlay .closebtn {
-	  font-size: 40px;
-	  top: 15px;
-	  right: 35px;
-	}
-  }
-  */
-  
 
 .intro {
 	height: 100vh;
@@ -178,11 +165,6 @@ a:hover {
 }
 
 /* About */
-
-.about-wrapper {
-   
-}
-
 .about li {
 	font-size: 1rem;
 	list-style-type: none;
