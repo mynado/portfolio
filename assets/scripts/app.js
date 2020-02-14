@@ -26,19 +26,21 @@ const closeNav = () => {
 	document.querySelector("#navMenu").style.width = "0%";
   } 
 
-document.querySelector('#open-menu').addEventListener('click', e => {
-	e.preventDefault();
-	console.log('click');
-	openNav();
-});
 
-document.querySelector('#close-menu').addEventListener('click', e => {
-	e.preventDefault();
-	console.log('click');
-	closeNav();
-});
-
-document.querySelectorAll('#navLinks li').forEach(link => link.addEventListener('click', e => {
-	console.log('click');
-	closeNav();
-}));
+if (document.documentElement.clientWidth < 900) {
+	document.querySelector('#open-menu').addEventListener('click', e => {
+		e.preventDefault();
+		console.log('click');
+		openNav();
+	});
+	
+	document.querySelector('#close-menu').addEventListener('click', e => {
+		e.preventDefault();
+		console.log('click');
+		closeNav();
+	});
+	document.querySelectorAll('#navLinks li').forEach(link => link.addEventListener('click', e => {
+		console.log('click');
+		closeNav();
+	}));
+}

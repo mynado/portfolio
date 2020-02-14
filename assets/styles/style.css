@@ -9,13 +9,15 @@ html {
 }
 
 body {
-	color: #333;
-	font-family: 'Lora', serif;
+	color: antiquewhite;
+	font-family: 'arial', serif;
 	font-size: 1.5rem;
 	line-height: 1.2;
+	background-color: antiquewhite;
 }
 
 header {
+	font-weight: 900;
 	padding: 1rem;
 	position: fixed;
 	width: 100%;
@@ -23,26 +25,42 @@ header {
 }
 
 p {
+	font-size: 2rem;
 	margin-bottom: 1rem;
 }
 
-a:visited {
-	color: #333;
+a {
+	color: antiquewhite;
 }
-
 a:hover {
-	color: #777;
-	text-decoration: none;
+	color: antiquewhite;
+	text-decoration: underline;
 }
 
 .container {
 	max-width: 920px;
 	margin: 0 auto;
 	padding: 1rem;
+}
 
+.outline {
+	font-style: italic;
+	text-transform: uppercase;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 /* Nav menu */
+nav a {
+	color: antiquewhite;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
 
 .overlay {
 	height: 100%;
@@ -65,17 +83,15 @@ a:hover {
 	margin-top: 30px; 
   }
 
-  
   .overlay a {
 	padding: 8px;
 	text-decoration: none;
 	font-size: 36px;
-	color: #818181;
+	color: #fff;
 	display: block; 
 	transition: 0.3s;
   }
   
- 
   .overlay a:hover, .overlay a:focus {
 	color: #f1f1f1;
   }
@@ -103,16 +119,31 @@ a:hover {
 
 
 .intro {
+	font-weight: bolder;
 	height: 100vh;
-   
+	color: antiquewhite;
 }
 
 .intro h1 {
+	font-size: 3.5rem;
+	font-style: italic;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	margin: 0 auto;
 	transform: translate(-50%, -50%);
+}
+
+.text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+
+}
+
+.center-text {
+	align-self: center;
 }
 
 /* 
@@ -136,17 +167,11 @@ a:hover {
 	margin-bottom: 1rem;
 }
 
-/* .project h2 {
-	font-size: 1.2rem;
-} */
-
 .project p {
 	font-size: 1rem;
 }
 
 .project img {
-	/* margin: 0 auto;
-	margin-bottom: 1rem; */
 	width: 100%;
 }
 
@@ -175,12 +200,20 @@ a:hover {
 }
 
 .skills {
-	font-size: 1rem;
+	font-size: 1.8rem;
 	margin-bottom: 2rem;
+	text-align: center;
+}
+
+h2 {
+	color: transparent;
+	font-size: 3rem;
+	text-align: center;
 }
 
 .skills h3 {
-	font-size: 1.5rem;
+	color: transparent;
+	font-size: 2rem;
 }
 
 .flex-wrapper {
@@ -194,12 +227,15 @@ a:hover {
 .education,
 .experience {
 	margin-bottom: 1rem;
+	text-align: center;
 }
 
 .education li,
 .experience li {
 	list-style-type: circle;
 	margin-left: 1rem;
+	margin-bottom: 1rem;
+
 }
 
 .artist p {
@@ -207,30 +243,43 @@ a:hover {
 }
 
 /* Contact */
+.contact {
+	text-align: center;
+	color: #333;
+}
+.contact h2 {
+	color: #333;
+}
+.contact p {
+	font-size: 1.2rem;
+}
 .social-media li {
+	color: #333;
 	display: inline-block;
 	list-style-type: none;
 }
 
+.social-media span {
+	color: #333;
+}
+
 /* Footer */
 
+footer {
+	color: #333;
+}
+
 footer .container {
-	font-size: 1.3rem;
 	text-align: center;
 }
 
 footer p {
+	font-size: 1.2rem;
 	margin-bottom: 0;
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-	/* .projects-wrapper {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-	} */
-
 	.project {
 		width: 60%;
 	}
@@ -255,7 +304,60 @@ footer p {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+	.overlay {
+		height: 90%;
+		width: 100%;
+		right: 0;
+		top: 0;
+		background: none;
+		overflow-x: hidden; 
+	  }
+	
+	  .overlay-content {
+		position: relative;
+		top: 50%; 
+		width: 100%; 
+		margin-top: 0; 
+	  }
+	.overlay-content li {
+		list-style-type: none;
+		position: relative;
+	} 
 
+	#item3 {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		/* transform: translate(-50%, -50%); */
+		transform: rotate(90deg);
+	}
+
+	#item2 {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: rotate(-90deg);
+	}
+	
+	  .overlay a {
+		text-decoration: underline;
+		font-size: 1.5rem;
+		color: antiquewhite;
+		display: inline-block; 
+	  }
+	  
+	  .overlay .closebtn {
+		display: none;
+	  }
+	
+	  /* Hamburger menu */
+	  .menu-wrapper {
+		  display: none;
+	  }
+
+	  .intro h1 {
+		  font-size: 6rem;
+	  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
