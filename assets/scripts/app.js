@@ -24,6 +24,7 @@ const closeNav = () => {
 }
 
 if (document.documentElement.clientWidth < 900) {
+
 	document.querySelector('#open-menu').addEventListener('click', e => {
 		e.preventDefault();
 		openNav();
@@ -36,8 +37,4 @@ if (document.documentElement.clientWidth < 900) {
 	document.querySelectorAll('#navLinks li').forEach(link => link.addEventListener('click', e => {
 		closeNav();
 	}));
-}
-
-if (document.documentElement.clientWidth > 900) {
-	openNav();
 }
