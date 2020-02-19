@@ -30,10 +30,10 @@ p {
 }
 
 a {
-	color: antiquewhite;
+	color: #333;
 }
 a:hover {
-	color: antiquewhite;
+	color: #666;
 	text-decoration: underline;
 }
 
@@ -44,7 +44,7 @@ a:hover {
 }
 
 .outline {
-	font-style: italic;
+	/* font-style: italic; */
 	text-transform: uppercase;
 	text-shadow:
 		-1px -1px 0 #000,
@@ -54,11 +54,16 @@ a:hover {
 }
 
 /* Nav menu */
+nav {
+	font-style: italic;
+}
+
 nav a {
 	color: antiquewhite;
 }
 
 nav a:hover {
+	color: #fff;
 	text-decoration: underline;
 }
 
@@ -119,6 +124,7 @@ nav a:hover {
 }
 
 .intro {
+	font-style: italic;
 	color: antiquewhite;
 	font-weight: bolder;
 	height: 100vh;
@@ -130,7 +136,6 @@ nav a:hover {
 
 .intro h1 {
 	font-size: 3rem;
-	font-style: italic;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -160,12 +165,12 @@ nav a:hover {
 }
 
 .project-title {
+	padding: 1rem;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	text-align: center;
-	transform: translate(-50%, -50%)
-
+	transform: translate(-50%, -50%);
 }
 
 .project h2 {
@@ -174,6 +179,10 @@ nav a:hover {
 
 .project p {
 	font-size: 1rem;
+}
+
+.project a {
+	color: antiquewhite;
 }
 
 .project img {
@@ -221,10 +230,11 @@ h2 {
 	font-size: 2rem;
 }
 
+.skills,
 .education,
 .experience,
 .resume {
-	margin-bottom: 1rem;
+	margin-bottom: 4rem;
 	text-align: center;
 }
 
@@ -237,7 +247,12 @@ h2 {
 }
 
 .resume a{
+	color: antiquewhite;
 	text-decoration: underline;
+}
+
+.artist {
+	margin-bottom: 2rem;
 }
 
 .artist p {
@@ -262,17 +277,22 @@ h2 {
 	font-size: 1.8rem;
 	
 }
-.contact p {
+.contact a {
 	font-size: 1.2rem;
 }
 .social-media li {
 	color: #333;
 	display: inline-block;
 	list-style-type: none;
+	margin-top: 1rem;
 }
 
 .social-media span {
 	color: #333;
+}
+
+.social-media span:hover {
+	color: #666;
 }
 
 /* Footer */
@@ -295,6 +315,10 @@ footer p {
 	.intro h1 {
 		font-size: 4rem;
 		width: 80%;
+	}
+
+	.intro p {
+		font-size: 3rem;
 	}
 
 	.project {
@@ -344,15 +368,16 @@ footer p {
 
 	#item1 {
 		position: absolute;
-		right: 0;
-		transform: rotate(90deg);
+		top: 50%;
+		left: -1.5rem;
+		transform: rotate(-90deg);
 	}
 
 	#item2 {
 		position: absolute;
 		top: 50%;
-		left: 0;
-		transform: rotate(-90deg);
+		right: 0;
+		transform: rotate(90deg);
 	}
 
 	#item3 {
